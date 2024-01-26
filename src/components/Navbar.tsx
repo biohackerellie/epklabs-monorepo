@@ -1,13 +1,34 @@
+'use client';
 import React from 'react';
 import Link from 'next/link';
-import { Insta } from '@/assets';
+import { Insta, menu, close } from '@/assets';
 import Image from 'next/image';
+import { navLinks } from '@/lib/constants';
+
 const Navbar = () => {
+	const [active, setActive] = React.useState('Home');
+	const [toggle, setToggle] = React.useState(false);
+
 	return (
 		<nav className='w-full flex items-center py-5 px-4 fixed top-0 z-20 bg-secondary'>
 			<div className='w-full flex text-black justify-between items-center max-w-7xl mx-auto'>
 				Ellie Kerns for Montana
-				<div className='flex flex-row space-x-4'>
+				<div>
+					<ul className='list-none hidden sm:flex flex-row gap-10'>
+						{navLinks.map((link) => (
+							<li
+								key={link.id}
+								className={`${
+									active === link.title ? 'text-white' : 'text-gray-500'
+								} hover:text-white text-[18px] font-medium cursor-pointer`}
+								onClick={() => setActive(link.title)}
+							>
+								<a href={link.id}>{link.title}</a>
+							</li>
+						))}
+					</ul>
+				</div>
+				<div className='hidden sm:flex flex-row space-x-4'>
 					<Link href='https://twitter.com/biohacker_ellie'>
 						<svg
 							width='24'
@@ -28,6 +49,36 @@ const Navbar = () => {
 							height={24}
 						/>
 					</Link>
+				</div>
+				<div className='sm:hidden flex flex-1 justify-end items-center'>
+					<img
+						src={toggle ? close : menu}
+						alt='menu'
+						className='w-[28px] h-[28px] object-contain cursor-pointer'
+						onClick={() => setToggle(!toggle)}
+					/>
+					<div
+						className={`${!toggle ? 'hidden' : 'flex'}
+								p-6 bg-slate-600 absolute top-20 right-0 mx-4 my-2 min-w[140px] z-10 rounded-xl
+							}`}
+					>
+						<ul className='list-none flex justify-end items-start flex-col gap-4'>
+							{navLinks.map((link) => (
+								<li
+									key={link.id}
+									className={`${
+										active === link.title ? 'text-white' : 'text-gray-950'
+									} font-medium cursor-pointer text-[16px]`}
+									onClick={() => {
+										setToggle(!toggle);
+										setActive(link.title);
+									}}
+								>
+									<a href={link.id}>{link.title}</a>
+								</li>
+							))}
+						</ul>
+					</div>
 				</div>
 			</div>
 		</nav>

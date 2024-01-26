@@ -1,12 +1,11 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+
 import Navbar from '@/components/Navbar';
-import Template from '@/components/motion/template';
+import { GeistSans } from 'geist/font/sans';
+
 import Footer from '@/components/Footer';
 import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
 	title: 'Ellie Kerns for Montana',
@@ -33,7 +32,7 @@ export default function RootLayout({
 			lang='en'
 			suppressHydrationWarning
 		>
-			<body className={inter.className}>
+			<body className={GeistSans.className}>
 				<Navbar />
 				{children}
 				<Footer />

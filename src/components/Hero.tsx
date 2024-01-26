@@ -8,13 +8,20 @@ import { Me } from '@/assets';
 import Image from 'next/image';
 
 const Hero = () => {
-	const playSound = () => {
-		const iphonePop = new Audio('/audio/iphone.mp3');
-		iphonePop.play();
-	};
-
 	return (
 		<section className='relative w-full h-screen mx-auto justify-center'>
+			{/* <div className='flex flex-col items-center justify-center'>
+				<motion.div variants={textVariant()}>
+					<h1 className='text-7xl  font-bold border-b  text-black uppercase tracking-wider'>
+						Ellie Kerns for Montana
+					</h1>
+				</motion.div>
+				<motion.div variants={textVariant()}>
+					<h2 className='text-4xl font-semibold p-2 text-black uppercase tracking-wide'>
+						Progressive, Inclusive, Just
+					</h2>
+				</motion.div>
+			</div> */}
 			<div className='absolute inset-0 max-w-7xl mx-auto flex flex-row items-center'>
 				<motion.div
 					variants={fadeIn({ direction: 'up', type: 'spring' })}
@@ -38,22 +45,18 @@ const Hero = () => {
 					</Tilt>
 				</motion.div>
 				<div className='flex flex-col gap-y-2  items-end'>
-					<motion.div
-						variants={fadeIn({ direction: 'left', type: 'spring' })}
-						onAnimationStart={playSound}
-					>
-						<div className='text-end pt-2 pr-2 mr-2 align-bottom border w-[200px]  h-full bg-blue-400 flex justify-end rounded-l-full rounded-tr-full '>
-							<p className='text-white   text-4xl p-4 ml-4'>
+					<motion.div variants={fadeIn({ direction: 'left', type: 'spring' })}>
+						<div className=' text-center sm:text-end pt-2 pr-2 mr-2 align-bottom border w-auto sm:w-[200px]  h-full bg-blue-400 flex justify-end rounded-l-full rounded-tr-full '>
+							<p className='text-white text-xl   sm:text-4xl p-4 ml-4'>
 								Hi <span className='wave'>👋</span>
 							</p>
 						</div>
 					</motion.div>
 					<motion.div
 						variants={fadeIn({ direction: 'left', type: 'spring', delay: 2 })}
-						onAnimationStart={playSound}
 					>
-						<div className='text-end pt-2 pr-2 ml-0 right-0 mr-2 align-bottom flex-shrink  border w-auto h-full bg-blue-400 flex justify-end rounded-l-full rounded-tr-full '>
-							<p className='text-white   text-4xl p-4 ml-4'>
+						<div className=' text-center sm:text-end pt-2 pr-2 mr-2 align-bottom border w-auto sm:w-[200px]  h-full bg-blue-400 flex justify-end rounded-l-full rounded-tr-full '>
+							<p className='text-white text-xl   sm:text-4xl p-4 ml-4'>
 								I'm <span className='text-pink-400'>Ellie Kerns</span> , and I'm
 								running for Montana House District 53! <br />
 							</p>
@@ -61,10 +64,9 @@ const Hero = () => {
 					</motion.div>
 					<motion.div
 						variants={fadeIn({ direction: 'left', type: 'spring', delay: 4 })}
-						onAnimationStart={playSound}
 					>
 						<div className='text-end pt-2 pr-2 ml-0 right-0 mr-2 align-bottom flex-shrink  border w-auto h-full bg-blue-400 flex justify-end rounded-l-full rounded-tr-full '>
-							<p className='text-white   text-4xl p-4 ml-4'>
+							<p className='text-white text-xl   sm:text-4xl p-4 ml-4'>
 								We just announced, so check back soon for more information!
 							</p>
 						</div>
@@ -82,7 +84,7 @@ const Hero = () => {
 									repeat: Infinity,
 									repeatType: 'loop',
 								}}
-								className='w-3 h-3 rounded-full bg-secondary mb-1'
+								className='w-3 h-3 rounded-full bg-pink-400 mb-1'
 							/>
 						</div>
 					</a>
