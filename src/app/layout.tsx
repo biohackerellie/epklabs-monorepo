@@ -1,25 +1,14 @@
 import type { Metadata } from 'next';
-
+import type { Viewport } from 'next';
 import Navbar from '@/components/Navbar';
 import { GeistSans } from 'geist/font/sans';
-
+export { meta as metadata } from './metadata';
 import Footer from '@/components/Footer';
 import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
 
-export const metadata: Metadata = {
-	title: 'Ellie Kerns for Montana',
-	description: 'Ellie Kerns is running for Montana House District 53.',
-	category: 'politics',
-	keywords: [
-		'Ellie Kerns',
-		'Montana',
-		'politics',
-		'elections',
-		'2024',
-		'Demecratic Socialist',
-		'LGBTQIA+',
-	],
+export const viewport: Viewport = {
+	themeColor: 'pink',
 };
 
 export default function RootLayout({
