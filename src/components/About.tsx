@@ -9,7 +9,10 @@ import SectionWrapper from '@/lib/sectionWrapper';
 const About = () => {
 	return (
 		<>
-			<motion.div variants={textVariant()}>
+			<motion.div
+				variants={textVariant()}
+				className='pb-4'
+			>
 				<h1 className='text-7xl  font-bold border-b  text-black uppercase tracking-wider'>
 					About me
 				</h1>

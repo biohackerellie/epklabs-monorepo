@@ -6,22 +6,24 @@ import { Tilt } from 'react-tilt';
 import SectionWrapper from '@/lib/sectionWrapper';
 import { Me } from '@/assets';
 import Image from 'next/image';
+import { epk } from '@/assets';
 
 const Hero = () => {
 	return (
 		<section className='relative w-full h-screen mx-auto justify-center'>
-			{/* <div className='flex flex-col items-center justify-center'>
-				<motion.div variants={textVariant()}>
-					<h1 className='text-7xl  font-bold border-b  text-black uppercase tracking-wider'>
-						Ellie Kerns for Montana
-					</h1>
+			<div className='my-0 gap-y-0 inset-0 max-w-7xl mx-auto max-h-md flex justify-center '>
+				<motion.div
+					variants={fadeIn({ direction: 'down', type: 'spring' })}
+					className=' object-contain  drop-shadow-xl'
+				>
+					<Image
+						src={epk}
+						height={300}
+						width={300}
+						alt='Ellie Paige Kerns for Montana'
+					/>
 				</motion.div>
-				<motion.div variants={textVariant()}>
-					<h2 className='text-4xl font-semibold p-2 text-black uppercase tracking-wide'>
-						Progressive, Inclusive, Just
-					</h2>
-				</motion.div>
-			</div> */}
+			</div>
 			<div className='absolute inset-0 max-w-7xl mx-auto flex flex-row items-center'>
 				<motion.div
 					variants={fadeIn({ direction: 'up', type: 'spring' })}

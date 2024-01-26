@@ -1,18 +1,37 @@
 'use client';
 import React from 'react';
 import Link from 'next/link';
-import { Insta, menu, close } from '@/assets';
+import { Insta, menu, close, epk } from '@/assets';
 import Image from 'next/image';
 import { navLinks } from '@/lib/constants';
+import { Button } from './ui/button';
 
 const Navbar = () => {
 	const [active, setActive] = React.useState('Home');
 	const [toggle, setToggle] = React.useState(false);
 
 	return (
-		<nav className='w-full flex items-center py-5 px-4 fixed top-0 z-20 bg-secondary'>
-			<div className='w-full flex text-black justify-between items-center max-w-7xl mx-auto'>
-				Ellie Kerns for Montana
+		<nav className='w-full flex  py-5 px-4 fixed top-0 z-20 bg-rose-300 bg-opacity-90 backdrop-blur-sm'>
+			<div className='w-full flex text-black justify-between max-w-7xl mx-auto'>
+				<div className='flex'>
+					<Image
+						src={epk}
+						height={24}
+						width={24}
+						alt='Ellie Kerns for Montana'
+						className=' object-contain scale-150'
+					/>
+					<Button
+						variant='ghost'
+						className='cursor-pointer'
+						onClick={() => {
+							setActive('');
+							window.scrollTo(0, 0);
+						}}
+					>
+						Ellie Kerns for Montana
+					</Button>
+				</div>
 				<div>
 					<ul className='list-none hidden sm:flex flex-row gap-10'>
 						{navLinks.map((link) => (
@@ -51,9 +70,11 @@ const Navbar = () => {
 					</Link>
 				</div>
 				<div className='sm:hidden flex flex-1 justify-end items-center'>
-					<img
+					<Image
 						src={toggle ? close : menu}
 						alt='menu'
+						width={24}
+						height={24}
 						className='w-[28px] h-[28px] object-contain cursor-pointer'
 						onClick={() => setToggle(!toggle)}
 					/>
