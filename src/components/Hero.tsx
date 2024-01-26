@@ -55,7 +55,7 @@ const Hero = () => {
 					<motion.div
 						variants={fadeIn({ direction: 'left', type: 'spring', delay: 2 })}
 					>
-						<div className=' text-center sm:text-end pt-2 pr-2 mr-2 align-bottom border w-auto sm:w-[200px]  h-full bg-blue-400 flex justify-end rounded-l-full rounded-tr-full '>
+						<div className=' text-center sm:text-end pt-2 pr-2 mr-2 align-bottom border w-auto   h-full bg-blue-400 flex justify-end rounded-l-full rounded-tr-full '>
 							<p className='text-white text-xl   sm:text-4xl p-4 ml-4'>
 								I'm <span className='text-pink-400'>Ellie Kerns</span> , and I'm
 								running for Montana House District 53! <br />
