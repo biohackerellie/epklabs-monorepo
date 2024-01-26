@@ -19,10 +19,10 @@ const About = () => {
 				<p className='text-2xl p-2 text-gray-500'>
 					I'm Ellie Kerns, and I'm running for Montana House District 53! I have
 					lived in Montana for almost my entire life. I moved to Billings in
-					1999 when I was 6 years old, and I have lived here ever since. I
-					graduated from Billings Skyview High School in 2011, and have been
-					working in the Tech industry ever since. I am currently an Software
-					Engineer and an IT Systems Administrator at Laurel Public Schools.
+					1999 when I was 6 years old, graduated from Billings Skyview High
+					School in 2011, and have been working in the Tech industry ever since.
+					I am currently an independent Software Engineer and an IT Systems
+					Administrator at Laurel Public Schools.
 				</p>
 				<h3 className='text-4xl font-semibold p-2 text-black uppercase tracking-wide'>
 					Why am I running?
