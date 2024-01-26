@@ -19,7 +19,7 @@ const About = () => {
 				<h2 className='text-4xl font-semibold p-2 text-black uppercase tracking-wide'>
 					Who am I?
 				</h2>
-				<p className='text-2xl p-2 text-gray-500'>
+				<p className='text-2xl p-2 text-blue-950'>
 					I'm Ellie Kerns, and I'm running for Montana House District 53! I have
 					lived in Montana for almost my entire life. I moved to Billings in
 					1999 when I was 6 years old, graduated from Billings Skyview High
@@ -30,7 +30,7 @@ const About = () => {
 				<h3 className='text-4xl font-semibold p-2 text-black uppercase tracking-wide'>
 					Why am I running?
 				</h3>
-				<p className='text-2xl p-2 text-gray-500'>
+				<p className='text-2xl p-2 text-blue-950'>
 					As a trans, working class, millennial Montanan, I have seen firsthand
 					the struggles that our community faces. I have seen the effects of our
 					broken healthcare system, the lack of affordable housing, and the need
@@ -48,7 +48,7 @@ const About = () => {
 				<h4 className='text-4xl font-semibold p-2 text-black uppercase tracking-wide'>
 					A promise to you
 				</h4>
-				<p className='text-2xl p-2 text-gray-500'>
+				<p className='text-2xl p-2 text-blue-950'>
 					As your representative, I promise to be a voice for the marginalized
 					and a staunch defender of our rights. My views will remain
 					unapologetically leftist, calling out injustice wherever I see it,
