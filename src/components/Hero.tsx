@@ -6,7 +6,7 @@ import { Tilt } from 'react-tilt';
 import SectionWrapper from '@/lib/sectionWrapper';
 import { Me } from '@/assets';
 import Image from 'next/image';
-import { epk } from '@/assets';
+import { epk, us } from '@/assets';
 
 const Hero = () => {
 	return (
@@ -68,11 +68,18 @@ const Hero = () => {
 					<motion.div
 						variants={fadeIn({ direction: 'left', type: 'spring', delay: 4 })}
 					>
-						<div className='text-end pt-2 pr-2 ml-0 right-0 mr-2 align-bottom flex-shrink  border w-auto h-full bg-blue-400 flex justify-end rounded-l-full rounded-tr-full '>
+						<div className='text-center sm:text-end pt-2 pr-2 ml-0 right-0 mr-2 align-bottom flex-shrink  border w-auto h-full bg-blue-400 flex justify-end rounded-l-full rounded-tr-full '>
 							<p className='text-white text-xl   sm:text-4xl p-4 ml-4'>
 								Fighting for equality for{' '}
 								<span className='text-pink-400 font-semibold'>ALL</span>{' '}
-								Montanans <br /> 🏳️‍🌈 🏳️‍⚧️ 🇺🇸
+								Montanans <br /> 🏳️‍🌈 🏳️‍⚧️
+								<Image
+									src={us}
+									alt={'United States'}
+									width={24}
+									height={24}
+									className='inline-block'
+								/>
 							</p>
 						</div>
 					</motion.div>

@@ -6,5 +6,5 @@ import epk from './epk.png';
 import dollarsign from './dollar-sign.png';
 import home from './home.png';
 import alert from './alert-circle.png';
-
-export { Me, Insta, close, menu, epk, dollarsign, home, alert };
+import us from './us.png';
+export { Me, Insta, close, menu, epk, dollarsign, home, alert, us };
