@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Contact from '@/components/Contact';
+import Issues from '@/components/Issues';
 import Image from 'next/image';
 
 export default function Home() {
@@ -16,7 +17,10 @@ export default function Home() {
 				<Hero />
 			</div>
 			<About />
-			<Contact />
+			<Issues />
+			<div className='relative z-0 pb-4'>
+				<Contact />
+			</div>
 		</motion.div>
 	);
 }

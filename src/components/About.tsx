@@ -51,7 +51,7 @@ const About = () => {
 			</motion.div>
 			<motion.p
 				variants={fadeIn({ delay: 1.1, duration: 1 })}
-				className='mt-4 ml-1 text-secondary-foreground text-[17px] max-w-3xl leading-[30px]'
+				className='mt-4 ml-1 text-secondary-foreground text-[17px] max-w-3xl mb-4 leading-[30px]'
 			>
 				As your representative, I promise to be a voice for the marginalized and
 				a staunch defender of our rights. My views will remain unapologetically
