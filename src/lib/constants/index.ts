@@ -8,3 +8,5 @@ export const navLinks = [
 		id: '#contact',
 	},
 ] as const;
+
+export const issues = [];

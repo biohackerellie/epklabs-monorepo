@@ -11,7 +11,7 @@ const Navbar = () => {
 	const [toggle, setToggle] = React.useState(false);
 
 	return (
-		<nav className='w-full flex  py-5 px-4 fixed top-0 z-20 bg-rose-300 bg-opacity-90 backdrop-blur-sm'>
+		<nav className='w-full flex  py-5 px-4 fixed top-0 z-20 bg-pink-300 bg-opacity-90 backdrop-blur-sm'>
 			<div className='w-full flex text-black justify-between max-w-7xl mx-auto'>
 				<a
 					href='/'

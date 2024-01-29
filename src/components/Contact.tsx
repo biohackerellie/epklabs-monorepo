@@ -59,7 +59,7 @@ const Contact = () => {
 					duration: 1,
 					delay: 0,
 				})}
-				className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+				className='flex-[0.75] bg-indigo-300 p-8 rounded-2xl'
 			>
 				<h1 className='text-2xl font-bold text-white'>Contact</h1>
 				<form
@@ -78,7 +78,7 @@ const Contact = () => {
 							value={form.name}
 							onChange={handleChange}
 							required
-							className='bg-rose-200 py-4 px-6 placeholder:text-gray-400 rounded-lg text-black outlined-none border-none font-medium'
+							className='bg-rose-50 py-4 px-6 placeholder:text-gray-400 rounded-lg text-black outlined-none border-none font-medium'
 						/>
 					</label>
 					<label className='flex flex-col'>
@@ -92,7 +92,7 @@ const Contact = () => {
 							value={form.email}
 							onChange={handleChange}
 							required
-							className='bg-rose-200 py-4 px-6 placeholder:text-gray-400 rounded-lg text-black outlined-none border-none font-medium'
+							className='bg-rose-50 py-4 px-6 placeholder:text-gray-400 rounded-lg text-black outlined-none border-none font-medium'
 						/>
 					</label>
 					<label className='flex flex-col'>
@@ -103,7 +103,7 @@ const Contact = () => {
 							placeholder='Your Phone(optional)'
 							value={form.phone}
 							onChange={handleChange}
-							className='bg-rose-200 py-4 px-6 placeholder:text-gray-400 rounded-lg text-black outlined-none border-none font-medium'
+							className='bg-rose-50 py-4 px-6 placeholder:text-gray-400 rounded-lg text-black outlined-none border-none font-medium'
 						/>
 					</label>
 					<label className='flex flex-col'>
@@ -116,14 +116,14 @@ const Contact = () => {
 							value={form.message}
 							onChange={handleChange}
 							required
-							className='bg-rose-200 py-4 px-6 placeholder:text-gray-400 rounded-lg text-black outlined-none border-none font-medium'
+							className='bg-rose-50 py-4 px-6 placeholder:text-gray-400 rounded-lg text-black outlined-none border-none font-medium'
 						/>
 					</label>
 					<Button
 						type='submit'
 						variant={'outline'}
 						size='sm'
-						className='bg-rose-200 text-black font-medium py-4 px-6 rounded-lg'
+						className='bg-rose-50 text-black w-fit font-medium py-4 px-6 rounded-lg'
 					>
 						Submit
 					</Button>
