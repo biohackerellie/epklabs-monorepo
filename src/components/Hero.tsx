@@ -48,9 +48,9 @@ const Hero = () => {
 				</motion.div>
 				<div className='flex flex-col gap-y-2  items-end'>
 					<motion.div variants={fadeIn({ direction: 'left', type: 'spring' })}>
-						<div className=' text-center sm:text-end pt-2 pr-2 mr-2 align-bottom border w-auto sm:w-[200px]  h-full bg-blue-400 flex justify-end rounded-l-full rounded-tr-full '>
+						<div className=' text-center sm:text-end pt-2 pr-2 mr-2  border w-[50px] sm:w-[200px]  h-full bg-blue-400 flex justify-center rounded-l-full rounded-tr-full '>
 							<p className='text-white text-xl   sm:text-4xl p-4 ml-4'>
-								Hi <span className='wave'>👋</span>
+								<span className='wave'>👋</span>
 							</p>
 						</div>
 					</motion.div>
@@ -59,8 +59,9 @@ const Hero = () => {
 					>
 						<div className=' text-center sm:text-end pt-2 pr-2 mr-2 align-bottom border w-auto   h-full bg-blue-400 flex justify-end rounded-l-full rounded-tr-full '>
 							<p className='text-white text-xl   sm:text-4xl p-4 ml-4'>
-								I'm <span className='text-pink-400'>Ellie Kerns</span> , and I'm
-								running for Montana House District 53! <br />
+								Meet <span className='text-pink-400'>Ellie Kerns</span> ,
+								Democratic Candidate for Montana House District 53 in Billings{' '}
+								<br />
 							</p>
 						</div>
 					</motion.div>
@@ -69,7 +70,9 @@ const Hero = () => {
 					>
 						<div className='text-end pt-2 pr-2 ml-0 right-0 mr-2 align-bottom flex-shrink  border w-auto h-full bg-blue-400 flex justify-end rounded-l-full rounded-tr-full '>
 							<p className='text-white text-xl   sm:text-4xl p-4 ml-4'>
-								We just announced, so check back soon for more information!
+								Fighting for equality for{' '}
+								<span className='text-pink-400 font-semibold'>ALL</span>{' '}
+								Montanans <br /> 🏳️‍🌈 🏳️‍⚧️ 🇺🇸
 							</p>
 						</div>
 					</motion.div>
