@@ -59,8 +59,11 @@ const Hero = () => {
 					>
 						<div className=' text-center sm:text-end pt-2 pr-2 mr-2 align-bottom border w-auto   h-full bg-blue-400 flex justify-end rounded-l-full rounded-tr-full '>
 							<p className='text-white text-xl   sm:text-4xl p-4 ml-4'>
-								Meet <span className='text-pink-400'>Ellie Kerns</span> ,
-								Democratic Candidate for Montana House District 53 in Billings{' '}
+								Meet{' '}
+								<span className='text-pink-200 drop-shadow-md animate-pulse'>
+									Ellie Kerns
+								</span>{' '}
+								, Democratic Candidate for Montana House District 53 in Billings{' '}
 								<br />
 							</p>
 						</div>
@@ -71,14 +74,16 @@ const Hero = () => {
 						<div className='text-center sm:text-end pt-2 pr-2 ml-0 right-0 mr-2 align-bottom flex-shrink  border w-auto h-full bg-blue-400 flex justify-end rounded-l-full rounded-tr-full '>
 							<p className='text-white text-xl   sm:text-4xl p-4 ml-4'>
 								Fighting for equality for{' '}
-								<span className='text-pink-400 font-semibold'>ALL</span>{' '}
+								<span className='text-pink-200 drop-shadow-md animate-pulse font-semibold'>
+									ALL
+								</span>{' '}
 								Montanans <br /> 🏳️‍🌈 🏳️‍⚧️
 								<Image
 									src={us}
 									alt={'United States'}
-									width={24}
-									height={24}
-									className='inline-block'
+									width={42}
+									height={42}
+									className='inline object-contain'
 								/>
 							</p>
 						</div>
