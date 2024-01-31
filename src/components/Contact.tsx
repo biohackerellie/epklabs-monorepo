@@ -15,6 +15,7 @@ const Contact = () => {
 		phone: '',
 		message: '',
 		updates: false,
+		volunteer: false,
 	});
 	const [loading, setLoading] = useState(false);
 	const handleChange = (e: any) => {
@@ -42,6 +43,7 @@ const Contact = () => {
 					phone: '',
 					message: '',
 					updates: false,
+					volunteer: false,
 				});
 			},
 			(err) => {
@@ -130,6 +132,18 @@ const Contact = () => {
 							type='checkbox'
 							name='updates'
 							checked={form.updates}
+							onChange={handleChange}
+							className='px-4 ml-4'
+						/>
+					</label>
+					<label className=''>
+						<span className='text-white font-medium mb-4'>
+							I want to Volunteer!
+						</span>
+						<input
+							type='checkbox'
+							name='volunteer'
+							checked={form.volunteer}
 							onChange={handleChange}
 							className='px-4 ml-4'
 						/>

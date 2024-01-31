@@ -7,6 +7,7 @@ export interface NotificationEmailProps {
 	message: string;
 	updates?: boolean;
 	endorsement?: boolean;
+	volunteer?: boolean;
 }
 
 export const NotificationEmail: React.FC<Readonly<NotificationEmailProps>> = ({
@@ -14,7 +15,7 @@ export const NotificationEmail: React.FC<Readonly<NotificationEmailProps>> = ({
 	name,
 	phone,
 	updates,
-
+	volunteer,
 	message,
 }) => (
 	<div>
@@ -25,6 +26,7 @@ export const NotificationEmail: React.FC<Readonly<NotificationEmailProps>> = ({
 
 		<p> Message: {message} </p>
 		{updates && <p> User wants to receive updates </p>}
+		{volunteer && <p> User wants to volunteer </p>}
 	</div>
 );
 
