@@ -4,7 +4,7 @@ import { Button } from './ui/button';
 
 import SectionWrapper from '@/lib/sectionWrapper';
 import { slideIn } from '@/lib/motion';
-import { motion } from 'framer-motion';
+import { motion, useForceUpdate } from 'framer-motion';
 import { env } from '@/env.mjs';
 
 const Contact = () => {
@@ -14,6 +14,7 @@ const Contact = () => {
 		email: '',
 		phone: '',
 		message: '',
+		updates: false,
 	});
 	const [loading, setLoading] = useState(false);
 	const handleChange = (e: any) => {
@@ -40,6 +41,7 @@ const Contact = () => {
 					email: '',
 					phone: '',
 					message: '',
+					updates: false,
 				});
 			},
 			(err) => {
@@ -51,7 +53,7 @@ const Contact = () => {
 	};
 
 	return (
-		<div className='xl:mt-12 xl:flex-row flex-col flex '>
+		<div className='xl:mt-12 xl:flex-row max-w-[800px] flex-col flex '>
 			<motion.div
 				variants={slideIn({
 					direction: 'left',
@@ -110,6 +112,7 @@ const Contact = () => {
 						<span className='text-white font-medium mb-4'>
 							Your Message<span className='text-red-500'>*</span>
 						</span>
+
 						<textarea
 							name='message'
 							placeholder='Your Message'
@@ -117,6 +120,18 @@ const Contact = () => {
 							onChange={handleChange}
 							required
 							className='bg-rose-50 py-4 px-6 placeholder:text-gray-400 rounded-lg text-black outlined-none border-none font-medium'
+						/>
+					</label>
+					<label className=''>
+						<span className='text-white font-medium mb-4'>
+							I want to receive updates from Ellie Kerns
+						</span>
+						<input
+							type='checkbox'
+							name='updates'
+							checked={form.updates}
+							onChange={handleChange}
+							className='px-4 ml-4'
 						/>
 					</label>
 					<Button

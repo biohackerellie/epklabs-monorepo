@@ -21,6 +21,7 @@ export async function POST(req: NextRequest) {
 	const email = body.email as string;
 	const message = body.message as string;
 	const phone = (body.phone as string) || '';
+	const updates = body.updates as boolean;
 
 	try {
 		const { data } = await resend.emails.send({
@@ -32,6 +33,7 @@ export async function POST(req: NextRequest) {
 				email: email,
 				message: message,
 				phone: phone,
+				updates: updates,
 			}) as React.ReactElement,
 		});
 
