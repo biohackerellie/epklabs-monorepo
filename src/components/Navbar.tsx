@@ -39,6 +39,14 @@ const Navbar = () => {
 								<a href={link.id}>{link.title}</a>
 							</li>
 						))}
+						<li className='text-blue-900 drop-shadow-sm hover:text-white text-[18px] font-medium cursor-pointer'>
+							<a
+								href='https://secure.actblue.com/donate/elliana-kerns-1'
+								target='_blank'
+							>
+								Donate
+							</a>
+						</li>
 					</ul>
 
 					<div className='hidden sm:flex flex-row space-x-4 ml-7'>

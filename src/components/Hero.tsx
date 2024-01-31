@@ -14,13 +14,12 @@ const Hero = () => {
 			<div className='my-0 gap-y-0 inset-0 max-w-7xl mx-auto max-h-md flex justify-center '>
 				<motion.div
 					variants={fadeIn({ direction: 'down', type: 'spring' })}
-					className=' object-contain  drop-shadow-xl'
+					className=' object-contain  drop-shadow-sm pt-10'
 				>
 					<Image
 						src={epk}
-						height={300}
-						width={300}
 						alt='Ellie Paige Kerns for Montana'
+						className=''
 					/>
 				</motion.div>
 			</div>
@@ -60,7 +59,7 @@ const Hero = () => {
 						<div className=' text-center sm:text-end pt-2 pr-2 mr-2 align-bottom border w-auto   h-full bg-blue-400 flex justify-end rounded-l-full rounded-tr-full '>
 							<p className='text-white text-xl   sm:text-4xl p-4 ml-4'>
 								Meet{' '}
-								<span className='text-pink-200 drop-shadow-md animate-pulse'>
+								<span className='text-pink-200 drop-shadow-md'>
 									Ellie Kerns
 								</span>{' '}
 								, Democratic Candidate for Montana House District 53 in Billings{' '}
@@ -73,18 +72,7 @@ const Hero = () => {
 					>
 						<div className='text-center sm:text-end pt-2 pr-2 ml-0 right-0 mr-2 align-bottom flex-shrink  border w-auto h-full bg-blue-400 flex justify-end rounded-l-full rounded-tr-full '>
 							<p className='text-white text-xl   sm:text-4xl p-4 ml-4'>
-								Fighting for equality for{' '}
-								<span className='text-pink-200 drop-shadow-md animate-pulse font-semibold'>
-									ALL
-								</span>{' '}
-								Montanans <br /> 🏳️‍🌈 🏳️‍⚧️
-								<Image
-									src={us}
-									alt={'United States'}
-									width={42}
-									height={42}
-									className='inline object-contain'
-								/>
+								Scroll down to learn more{' '}
 							</p>
 						</div>
 					</motion.div>
