@@ -91,7 +91,7 @@ const Navbar = () => {
 					/>
 					<div
 						className={`${!toggle ? 'hidden' : 'flex'}
-								p-6 bg-slate-600 absolute top-20 right-0 mx-4 my-2 min-w[140px] z-10 rounded-xl
+								p-6 bg-sky-500 absolute top-20 right-0 mx-4 my-2 min-w[140px] z-10 rounded-xl
 							}`}
 					>
 						<ul className='list-none flex justify-end items-start flex-col gap-4'>
@@ -99,7 +99,7 @@ const Navbar = () => {
 								<li
 									key={link.id}
 									className={`${
-										active === link.title ? 'text-white' : 'text-gray-950'
+										active === link.title ? 'text-pink-400' : 'text-white'
 									} font-medium cursor-pointer text-[16px]`}
 									onClick={() => {
 										setToggle(!toggle);
@@ -109,6 +109,14 @@ const Navbar = () => {
 									<a href={link.id}>{link.title}</a>
 								</li>
 							))}
+							<li className='text-white font-medium text-[16px]'>
+								<a
+									href='https://secure.actblue.com/donate/elliana-kerns-1'
+									target='_blank'
+								>
+									Donate
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
