@@ -7,4 +7,5 @@ import dollarsign from './dollar-sign.png';
 import home from './home.png';
 import alert from './alert-circle.png';
 import us from './us.png';
-export { Me, Insta, close, menu, epk, dollarsign, home, alert, us };
+import rfs1 from './rfs1.png';
+export { Me, Insta, close, menu, epk, dollarsign, home, alert, us, rfs1 };

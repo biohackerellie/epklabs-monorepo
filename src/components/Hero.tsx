@@ -77,23 +77,23 @@ const Hero = () => {
 						</div>
 					</motion.div>
 				</div>
-				<div className=' xs:bottom-10 bottom-32 w-full flex absolute p-2 justify-center items-end'>
-					<a href='about'>
-						<div className='w-[35px] h-[64px] rounded-3xl border-4 border-pink-400 flex justify-center items-start p02'>
-							<motion.div
-								animate={{
-									y: [0, 24, 0],
-								}}
-								transition={{
-									duration: 1.5,
-									repeat: Infinity,
-									repeatType: 'loop',
-								}}
-								className='w-3 h-3 rounded-full bg-pink-400 mb-1'
-							/>
-						</div>
-					</a>
-				</div>
+			</div>
+			<div className=' xs:bottom-10  w-full flex absolute p-2 justify-center items-end'>
+				<a href='about'>
+					<div className='w-[35px] h-[64px] rounded-3xl border-4 border-pink-400 flex justify-center items-start p02'>
+						<motion.div
+							animate={{
+								y: [0, 24, 0],
+							}}
+							transition={{
+								duration: 1.5,
+								repeat: Infinity,
+								repeatType: 'loop',
+							}}
+							className='w-3 h-3 rounded-full bg-pink-400 mb-1'
+						/>
+					</div>
+				</a>
 			</div>
 		</section>
 	);
