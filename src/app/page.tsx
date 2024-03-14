@@ -19,8 +19,10 @@ export default function Home() {
 			</div>
 			<About />
 			<Issues />
-			<div className='relative z-0 pb-4'>
+			<div className='relative z-10 pb-4'>
 				<Contact />
+			</div>
+			<div className='relative z-0 pb-4'>
 				<Endorsements />
 			</div>
 		</motion.div>

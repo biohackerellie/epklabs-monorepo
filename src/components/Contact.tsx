@@ -6,7 +6,6 @@ import SectionWrapper from '@/lib/sectionWrapper';
 import { slideIn } from '@/lib/motion';
 import { motion, useForceUpdate } from 'framer-motion';
 
-
 const Contact = () => {
 	const formRef = useRef<HTMLFormElement | null>(null);
 	const [form, setForm] = useState({
@@ -150,8 +149,7 @@ const Contact = () => {
 					</label>
 					<Button
 						type='submit'
-						variant={'outline'}
-						size='sm'
+						size={'sm'}
 						className='bg-rose-50 text-black w-fit font-medium py-4 px-6 rounded-lg'
 					>
 						Submit

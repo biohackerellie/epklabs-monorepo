@@ -10,7 +10,7 @@ const Endorsements = () => {
 		<motion.div
 			transition={spring}
 			animate={{ scale: 1 }}
-			className='flex flex-col items-center justify-center max-w-screen'
+			className='flex flex-col h-auto items-center justify-center max-w-screen'
 		>
 			<div className='flex flex-col items-center justify-center  max-w-screen'>
 				<Link href='https://directory.runforsomething.net/candidate/5825542522114116370/kerns-ellie/'>
