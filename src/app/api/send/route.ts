@@ -1,17 +1,17 @@
 import NotificationEmail from '@/components/emails';
 import { Resend } from 'resend';
-import { env } from '@/env.mjs';
+
 import { NextRequest, NextResponse } from 'next/server';
 import { headers } from 'next/headers';
 
 export const dynamic = 'force-dynamic';
 
-const resend = new Resend(env.RESEND_API);
+const resend = new Resend(process.env.RESEND_API);
 
 export async function POST(req: NextRequest) {
 	const apiKey = req.headers.get('x-api-key');
 
-	if (apiKey !== env.NEXT_PUBLIC_EMAIL_SECRET) {
+	if (apiKey !== process.env.NEXT_PUBLIC_EMAIL_SECRET) {
 		console.log('Invalid API key');
 		return NextResponse.error();
 	}
@@ -27,7 +27,7 @@ export async function POST(req: NextRequest) {
 	try {
 		const { data } = await resend.emails.send({
 			from: 'Campaign <no_reply@elliekerns.com>',
-			to: env.MY_EMAIL || 'ellie@epklabs.com',
+			to: process.env.MY_EMAIL || 'ellie@epklabs.com',
 			subject: 'New Campaign Message',
 			react: NotificationEmail({
 				name: name,

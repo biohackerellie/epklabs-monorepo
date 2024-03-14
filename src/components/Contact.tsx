@@ -5,7 +5,7 @@ import { Button } from './ui/button';
 import SectionWrapper from '@/lib/sectionWrapper';
 import { slideIn } from '@/lib/motion';
 import { motion, useForceUpdate } from 'framer-motion';
-import { env } from '@/env.mjs';
+
 
 const Contact = () => {
 	const formRef = useRef<HTMLFormElement | null>(null);
@@ -30,7 +30,7 @@ const Contact = () => {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
-				'x-api-key': env.NEXT_PUBLIC_EMAIL_SECRET,
+				'x-api-key': process.env.NEXT_PUBLIC_EMAIL_SECRET as string,
 			},
 			body: JSON.stringify(form),
 		}).then(
