@@ -1,41 +1,48 @@
 {
-	"$schema": "https://turbo.build/schema.json",
-	"globalDependencies": ["**/.env"],
-	"pipeline": {
-		"topo": {
-			"dependsOn": ["^topo"]
-		},
-		"build": {
-			"dependsOn": ["^build"],
-			"outputs": ["dist/**", ".next/**", "!.next/cache/**", "public/dist/**"]
-		},
-		"dev": {
-			"cache": false,
-			"persistent": true
-		},
-		"clean": {
-			"cache": false
-		},
-		"format": {
-			"outputs": ["node_modules/.cache/.prettiercache"],
-			"outputMode": "new-only"
-		},
-		"lint": {
-			"dependsOn": ["^topo"],
-			"outputs": ["node_modules/.cache/.eslintcache"]
-		},
-		"typecheck": {
-			"dependsOn": ["^topo"],
-			"outputs": ["node_modules/.cache/tsbuildinfo.json"]
-		}
-	},
-	"globalEnv": [
-		"RESEND_API",
-		"MY_EMAIL",
-		"NEXT_PUBLIC_EMAIL_SECRET",
-		"DB_HOST",
-		"DB_USERNAME",
-		"DB_PASSWORD",
-		"DB_NAME"
-	]
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": ["**/.env"],
+  "pipeline": {
+    "topo": {
+      "dependsOn": ["^topo"]
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [
+        "dist/**",
+        ".next/**",
+        "!.next/cache/**",
+        "public/dist/**",
+        ".output/**",
+        ".vercel/output/**"
+      ]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "clean": {
+      "cache": false
+    },
+    "format": {
+      "outputs": ["node_modules/.cache/.prettiercache"],
+      "outputMode": "new-only"
+    },
+    "lint": {
+      "dependsOn": ["^topo"],
+      "outputs": ["node_modules/.cache/.eslintcache"]
+    },
+    "typecheck": {
+      "dependsOn": ["^topo"],
+      "outputs": ["node_modules/.cache/tsbuildinfo.json"]
+    }
+  },
+  "globalEnv": [
+    "RESEND_API",
+    "MY_EMAIL",
+    "NEXT_PUBLIC_EMAIL_SECRET",
+    "DB_HOST",
+    "DB_USERNAME",
+    "DB_PASSWORD",
+    "DB_NAME"
+  ]
 }
