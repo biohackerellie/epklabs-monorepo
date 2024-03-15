@@ -1,30 +1,29 @@
-'use client';
-import { motion, spring } from 'framer-motion';
-import SectionWrapper from '@/lib/sectionWrapper';
-import Image from 'next/image';
-import Link from 'next/link';
-import { rfs1 } from '@/assets';
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import { motion, spring } from "framer-motion";
+
+import { rfs1 } from "@/assets";
+import SectionWrapper from "@/lib/sectionWrapper";
 
 const Endorsements = () => {
-	return (
-		<motion.div
-			transition={spring}
-			animate={{ scale: 1 }}
-			className='flex flex-col h-auto items-center justify-center max-w-screen'
-		>
-			<div className='flex flex-col items-center justify-center  max-w-screen'>
-				<Link href='https://directory.runforsomething.net/candidate/5825542522114116370/kerns-ellie/'>
-					<Image
-						src={rfs1}
-						alt='Run For Something'
-					/>
-				</Link>
-			</div>
-		</motion.div>
-	);
+  return (
+    <motion.div
+      transition={spring}
+      animate={{ scale: 1 }}
+      className="max-w-screen flex h-auto flex-col items-center justify-center"
+    >
+      <div className="max-w-screen flex flex-col items-center  justify-center">
+        <Link href="https://directory.runforsomething.net/candidate/5825542522114116370/kerns-ellie/">
+          <Image src={rfs1} alt="Run For Something" />
+        </Link>
+      </div>
+    </motion.div>
+  );
 };
 
 export default SectionWrapper({
-	Component: Endorsements,
-	idName: 'endorsements',
+  Component: Endorsements,
+  idName: "endorsements",
 });

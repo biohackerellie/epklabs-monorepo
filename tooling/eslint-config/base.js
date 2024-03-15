@@ -22,6 +22,7 @@ const config = {
     "@typescript-eslint/consistent-type-definitions": "warn",
     "turbo/no-undeclared-env-vars": "off",
     "@typescript-eslint/prefer-nullish-coalescing": "warn",
+    "react/no-unescaped-entities": "off",
     "@typescript-eslint/no-unused-vars": [
       "warn",
       { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },

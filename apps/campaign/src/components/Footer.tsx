@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
-	return (
-		<footer className='w-full flex items-center py-5 px-4  bottom-0 z-20 bg-secondary'>
-			<div className='w-full text-xs sm:text-lg flex text-black justify-around items-center max-w-7xl mx-auto'>
-				<p>© 2024 Ellie Kerns</p>
-				<p>This site built and hosted entirely by Ellie Kerns.</p>
-			</div>
-		</footer>
-	);
+  return (
+    <footer className="bottom-0 z-20 flex w-full items-center  bg-secondary px-4 py-5">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-around text-xs text-black sm:text-lg">
+        <p>© 2024 Ellie Kerns</p>
+        <p>This site built and hosted entirely by Ellie Kerns.</p>
+      </div>
+    </footer>
+  );
 };
 
-export default Footer
+export default Footer;

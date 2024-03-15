@@ -1,34 +1,32 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { staggerContainer } from './motion';
-import React from 'react';
+import React from "react";
+import { motion } from "framer-motion";
+
+import { staggerContainer } from "./motion";
 
 const SectionWrapper = ({
-	Component,
-	idName,
+  Component,
+  idName,
 }: {
-	Component: React.FC;
-	idName: string;
+  Component: React.FC;
+  idName: string;
 }) =>
-	function HOC() {
-		return (
-			<motion.section
-				variants={staggerContainer()}
-				initial='hidden'
-				whileInView='show'
-				viewport={{ once: true, amount: 0.025 }}
-				className='max-w-7xl mx-auto relative z-0'
-			>
-				<span
-					className='hash-span'
-					id={idName}
-				>
-					&nbsp;
-				</span>
-				<Component />
-			</motion.section>
-		);
-	};
+  function HOC() {
+    return (
+      <motion.section
+        variants={staggerContainer()}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.025 }}
+        className="relative z-0 mx-auto max-w-7xl"
+      >
+        <span className="hash-span" id={idName}>
+          &nbsp;
+        </span>
+        <Component />
+      </motion.section>
+    );
+  };
 
 export default SectionWrapper;
