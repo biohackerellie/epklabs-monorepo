@@ -1,0 +1,70 @@
+{
+  "name": "elliekerns",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "git clean -xdf .next .turbo node_modules",
+    "dev": "pnpm with-env next dev ",
+    "build": "pnpm with-env next build",
+    "start": "pnpm with-env next start",
+    "lint": "dotenv -v SKIP_ENV_VALIDATION=1 next lint",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "with-env": "dotenv -e ../../.env --",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@mdx-js/loader": "^3.0.0",
+    "@mdx-js/react": "^3.0.0",
+    "@next/mdx": "^14.1.0",
+    "@planetscale/database": "^1.16.0",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@t3-oss/env-nextjs": "^0.8.0",
+    "zod": "^3.22.4",
+    "@vercel/analytics": "^1.1.2",
+    "@vercel/postgres": "^0.7.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "dotenv": "^16.4.5",
+    "dotenv-cli": "^7.3.0",
+    "drizzle-orm": "^0.29.4",
+    "framer-motion": "^11.0.3",
+    "geist": "^1.2.1",
+    "lucide-react": "^0.315.0",
+    "next": "14.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-tilt": "^1.0.2",
+    "react-vertical-timeline-component": "^3.6.0",
+    "resend": "^3.1.0",
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss-animate": "^1.0.7",
+    "tsx": "^4.7.1"
+  },
+  "devDependencies": {
+    "@epklabs/eslint-config": "workspace:*",
+    "@epklabs/prettier-config": "workspace:*",
+    "@epklabs/tsconfig": "workspace:*",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-vertical-timeline-component": "^3.3.6",
+    "autoprefixer": "^10.0.1",
+    "drizzle-kit": "^0.20.14",
+    "eslint": "^8.57.0",
+    "jiti": "^1.21.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5.4.2",
+    "@types/mdx": "^2.0.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@epklabs/eslint-config/base",
+      "@epklabs/eslint-config/nextjs",
+      "@epklabs/eslint-config/react"
+    ]
+  },
+  "prettier": "@epklabs/prettier-config"
+}

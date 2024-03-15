@@ -1,55 +1,29 @@
 {
-	"name": "elliekerns",
-	"version": "0.1.0",
+	"name": "epklabs",
+	"version": "0.0.0",
 	"private": true,
+	"workspaces": [
+		"apps/*",
+		"tooling/*"
+	],
 	"scripts": {
-		"dev": "next dev ",
-		"build": "next build",
-		"start": "next start",
-		"lint": "next lint",
-		"with-env": "dotenv -e ./.env --",
-		"push": "pnpm with-env drizzle-kit push:mysql"
-	},
-	"dependencies": {
-		"@mdx-js/loader": "^3.0.0",
-		"@mdx-js/react": "^3.0.0",
-		"@next/mdx": "^14.1.0",
-		"@planetscale/database": "^1.16.0",
-		"@radix-ui/react-slot": "^1.0.2",
-		"@t3-oss/env-nextjs": "^0.8.0",
-		"@types/mdx": "^2.0.10",
-		"@vercel/analytics": "^1.1.2",
-		"@vercel/postgres": "^0.7.2",
-		"class-variance-authority": "^0.7.0",
-		"clsx": "^2.1.0",
-		"dotenv": "^16.4.5",
-		"dotenv-cli": "^7.3.0",
-		"drizzle-orm": "^0.29.4",
-		"framer-motion": "^11.0.3",
-		"geist": "^1.2.1",
-		"lucide-react": "^0.315.0",
-		"next": "14.1.0",
-		"react": "^18",
-		"react-dom": "^18",
-		"react-tilt": "^1.0.2",
-		"react-vertical-timeline-component": "^3.6.0",
-		"resend": "^3.1.0",
-		"tailwind-merge": "^2.2.1",
-		"tailwindcss-animate": "^1.0.7",
-		"tsx": "^4.7.1",
-		"zod": "^3.22.4"
+		"clean": "git clean -xdf node_modules",
+		"dev": "turbo run dev --parallel",
+		"format": "turbo format --continue -- --cache --cache-location node_modules/.cache/.prettiercache",
+		"format:fix": "turbo format --continue -- --write --cache --cache-location node_modules/.cache/.prettiercache",
+		"lint": "turbo lint --continue -- --cache --cache-location node_modules/.cache/.eslintcache",
+		"lint:fix": "turbo lint --continue -- --fix --cache --cache-location node_modules/.cache/.eslintcache",
+		"lint:ws": "pnpm dlx sherif@latest",
+		"postinstall": "pnpm lint:ws",
+		"typecheck": "turbo typecheck"
 	},
 	"devDependencies": {
-		"@types/node": "^20",
-		"@types/react": "^18",
-		"@types/react-dom": "^18",
-		"@types/react-vertical-timeline-component": "^3.3.6",
-		"autoprefixer": "^10.0.1",
-		"drizzle-kit": "^0.20.14",
-		"eslint": "^8",
-		"eslint-config-next": "14.1.0",
-		"postcss": "^8",
-		"tailwindcss": "^3.3.0",
-		"typescript": "^5"
-	}
+		"@epklabs/prettier-config": "workspace:*",
+		"@turbo/gen": "^1.12.5",
+		"prettier": "^3.2.5",
+		"turbo": "^1.12.5",
+		"typescript": "^5.4.2"
+	},
+	"prettier": "@epklabs/prettier-config",
+	"packageManager": "pnpm@8.15.4"
 }
