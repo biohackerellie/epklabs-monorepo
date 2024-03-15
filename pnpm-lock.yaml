@@ -151,6 +151,27 @@ importers:
         specifier: ^5.4.2
         version: 5.4.2
 
+  packages/db:
+    devDependencies:
+      '@epklabs/eslint-config':
+        specifier: workspace:*
+        version: link:../../tooling/eslint-config
+      '@epklabs/prettier-config':
+        specifier: workspace:*
+        version: link:../../tooling/prettier-config
+      '@epklabs/tsconfig':
+        specifier: workspace:*
+        version: link:../../tooling/tsconfig
+      eslint:
+        specifier: ^8.57.0
+        version: 8.57.0
+      prettier:
+        specifier: ^3.2.5
+        version: 3.2.5
+      typescript:
+        specifier: ^5.4.2
+        version: 5.4.2
+
   tooling/eslint-config:
     dependencies:
       '@next/eslint-plugin-next':

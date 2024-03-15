@@ -1,6 +1,6 @@
 {
-  "name": "@epklabs/{{ name }}",
-  "version": "0.1.0",
+  "name": "@epklabs/db",
+  "version": "0.0.0",
   "private": true,
   "type": "module",
   "exports": {
