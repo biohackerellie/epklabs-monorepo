@@ -261,8 +261,8 @@ importers:
   tooling/tsconfig:
     dependencies:
       bun-types:
-        specifier: ^1.0.30
-        version: 1.0.31
+        specifier: ^1.0.35
+        version: 1.0.35
 
 packages:
 
@@ -2138,8 +2138,8 @@ packages:
       semver: 7.6.0
     dev: true
 
-  /bun-types@1.0.31:
-    resolution: {integrity: sha512-Y7lROXMHMWe/6O0wDrFbyV4IRIQYhVnV2HrhKQzMAIpO+ffv+UBphoUUHYC2D8HhoYJkrBXKJJt/Es6NWKNLpg==}
+  /bun-types@1.0.35:
+    resolution: {integrity: sha512-JlFllUCVMZbDyGfbv9dBWXd2tRdZSzyP1EWDKcTTVRViYNYX8AEsfpMN/vu6Hk8CBhKrhbbBkKZcNjJev8QQHQ==}
     dependencies:
       '@types/node': 20.11.28
       '@types/ws': 8.5.10
