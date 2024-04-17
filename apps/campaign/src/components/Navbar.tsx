@@ -117,15 +117,6 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
-              <li className="text-[16px] font-medium text-white">
-                <a
-                  href="https://secure.actblue.com/donate/elliana-kerns-1"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Donate
-                </a>
-              </li>
             </ul>
           </div>
         </div>
