@@ -50,7 +50,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/react-vertical-timeline-component": "^3.3.6",
-    "autoprefixer": "^10.0.1",
+    "autoprefixer": "^10.4.19",
     "drizzle-kit": "^0.20.14",
     "eslint": "^8.57.0",
     "jiti": "^1.21.0",
