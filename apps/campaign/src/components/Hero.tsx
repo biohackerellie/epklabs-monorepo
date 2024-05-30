@@ -25,7 +25,7 @@ const Hero = () => {
           Free Palestine NOW!
         </div>
         <div className="py-4 text-base font-extralight dark:text-neutral-200 md:text-4xl">
-          Stop funding Israel's Genocide!
+          Stop funding Israel's Genocide of the Palestinian people!
         </div>
 
         <Button
