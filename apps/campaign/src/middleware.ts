@@ -16,9 +16,6 @@ const blockedCountries = [
 ];
 
 export function middleware(req: NextRequest) {
-  const country = req.geo?.country;
-  if (country && blockedCountries.includes(country)) {
-    return NextResponse.redirect(new URL("/404", req.url));
-  }
+
   return NextResponse.next();
 }
