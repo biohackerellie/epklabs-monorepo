@@ -27,10 +27,10 @@ importers:
   apps/campaign:
     dependencies:
       '@mdx-js/loader':
-        specifier: ^3.0.0
+        specifier: ^3.0.1
         version: 3.0.1(webpack@5.90.3(esbuild@0.19.12))
       '@mdx-js/react':
-        specifier: ^3.0.0
+        specifier: ^3.0.1
         version: 3.0.1(@types/react@18.2.66)(react@18.2.0)
       '@next/mdx':
         specifier: ^14.1.0
