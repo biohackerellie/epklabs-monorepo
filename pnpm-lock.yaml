@@ -64,7 +64,7 @@ importers:
         version: 7.4.2
       drizzle-orm:
         specifier: ^0.29.4
-        version: 0.29.5(@neondatabase/serverless@0.7.2)(@planetscale/database@1.18.0)(@types/pg@8.6.6)(@types/react@18.3.3)(@vercel/postgres@0.8.0)(bun-types@1.0.33)(react@18.3.1)
+        version: 0.29.5(@neondatabase/serverless@0.7.2)(@planetscale/database@1.18.0)(@types/pg@8.6.6)(@types/react@18.3.3)(@vercel/postgres@0.8.0)(bun-types@1.1.12)(react@18.3.1)
       framer-motion:
         specifier: ^11.0.3
         version: 11.0.14(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -224,8 +224,8 @@ importers:
   tooling/tsconfig:
     dependencies:
       bun-types:
-        specifier: ^1.0.30
-        version: 1.0.31
+        specifier: ^1.1.12
+        version: 1.1.12
 
 packages:
 
@@ -907,8 +907,8 @@ packages:
   '@types/ms@0.7.34':
     resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
 
-  '@types/node@20.11.28':
-    resolution: {integrity: sha512-M/GPWVS2wLkSkNHVeLkrF2fD5Lx5UC4PxA0uZcKc6QqbIQUJyW1jVjueJYi1z8n0I5PxYrtpnPnWglE+y9A0KA==}
+  '@types/node@20.12.14':
+    resolution: {integrity: sha512-scnD59RpYD91xngrQQLGkE+6UrHUPzeKZWhhjBSa3HSkwjbQc38+q3RoIVEwxQGRw3M+j5hpNAM+lgV3cVormg==}
 
   '@types/node@20.13.0':
     resolution: {integrity: sha512-FM6AOb3khNkNIXPnHFDYaHerSv8uN22C91z098AnGccVu+Pcdhi+pNUFDi0iLmPIsVE0JBD0KVS7mzUYt4nRzQ==}
@@ -1281,11 +1281,8 @@ packages:
   builtins@5.0.1:
     resolution: {integrity: sha512-qwVpFEHNfhYJIzNRBvd2C1kyo6jz3ZSMPyyuR47OPdiKWlbYnZNyDWuyR175qDnAJLiCo5fBBqPb3RiXgWlkOQ==}
 
-  bun-types@1.0.31:
-    resolution: {integrity: sha512-Y7lROXMHMWe/6O0wDrFbyV4IRIQYhVnV2HrhKQzMAIpO+ffv+UBphoUUHYC2D8HhoYJkrBXKJJt/Es6NWKNLpg==}
-
-  bun-types@1.0.33:
-    resolution: {integrity: sha512-L5tBIf9g6rBBkvshqysi5NoLQ9NnhSPU1pfJ9FzqoSfofYdyac3WLUnOIuQ+M5za/sooVUOP2ko+E6Tco0OLIA==}
+  bun-types@1.1.12:
+    resolution: {integrity: sha512-DIM2C9qCECwhck9nLsCDeTv943VmGMCkwX3KljjprSRDXaK2CSiUDVGbUit80Er38ukgxuESJgYPAys4FsNCdg==}
 
   busboy@1.6.0:
     resolution: {integrity: sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==}
@@ -4393,7 +4390,7 @@ snapshots:
 
   '@types/ms@0.7.34': {}
 
-  '@types/node@20.11.28':
+  '@types/node@20.12.14':
     dependencies:
       undici-types: 5.26.5
 
@@ -4863,16 +4860,10 @@ snapshots:
     dependencies:
       semver: 7.6.0
 
-  bun-types@1.0.31:
+  bun-types@1.1.12:
     dependencies:
-      '@types/node': 20.11.28
+      '@types/node': 20.12.14
       '@types/ws': 8.5.10
-
-  bun-types@1.0.33:
-    dependencies:
-      '@types/node': 20.11.28
-      '@types/ws': 8.5.10
-    optional: true
 
   busboy@1.6.0:
     dependencies:
@@ -5176,14 +5167,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.29.5(@neondatabase/serverless@0.7.2)(@planetscale/database@1.18.0)(@types/pg@8.6.6)(@types/react@18.3.3)(@vercel/postgres@0.8.0)(bun-types@1.0.33)(react@18.3.1):
+  drizzle-orm@0.29.5(@neondatabase/serverless@0.7.2)(@planetscale/database@1.18.0)(@types/pg@8.6.6)(@types/react@18.3.3)(@vercel/postgres@0.8.0)(bun-types@1.1.12)(react@18.3.1):
     optionalDependencies:
       '@neondatabase/serverless': 0.7.2
       '@planetscale/database': 1.18.0
       '@types/pg': 8.6.6
       '@types/react': 18.3.3
       '@vercel/postgres': 0.8.0
-      bun-types: 1.0.33
+      bun-types: 1.1.12
       react: 18.3.1
 
   eastasianwidth@0.2.0: {}
