@@ -63,8 +63,8 @@ importers:
         specifier: ^7.4.2
         version: 7.4.2
       drizzle-orm:
-        specifier: ^0.31.1
-        version: 0.31.1(@neondatabase/serverless@0.7.2)(@planetscale/database@1.18.0)(@types/pg@8.6.6)(@types/react@18.3.3)(@vercel/postgres@0.8.0)(bun-types@1.1.12)(react@18.3.1)
+        specifier: ^0.31.2
+        version: 0.31.2(@neondatabase/serverless@0.7.2)(@planetscale/database@1.18.0)(@types/pg@8.6.6)(@types/react@18.3.3)(@vercel/postgres@0.8.0)(bun-types@1.1.12)(react@18.3.1)
       framer-motion:
         specifier: ^11.2.10
         version: 11.2.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1720,8 +1720,8 @@ packages:
     resolution: {integrity: sha512-hhCJRyZkr6cWnnUuslxE3VbptPVLpFPZkfS3iyuuHUHGQV8jTUotRvpDFhhytxhwazy4Uj5s7wcsQp3iXHn1vQ==}
     hasBin: true
 
-  drizzle-orm@0.31.1:
-    resolution: {integrity: sha512-hTbYne2XX3y6sV7WSxcPH6/vNSiQSUG9VZsFI27jBMCN0OT3Ok7ao3pIT5OMAqWkzJCRFgGjAaUeTAZWPgOKag==}
+  drizzle-orm@0.31.2:
+    resolution: {integrity: sha512-QnenevbnnAzmbNzQwbhklvIYrDE8YER8K7kSrAWQSV1YvFCdSQPzj+jzqRdTSsV2cDqSpQ0NXGyL1G9I43LDLg==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
       '@cloudflare/workers-types': '>=3'
@@ -1731,6 +1731,7 @@ packages:
       '@op-engineering/op-sqlite': '>=2'
       '@opentelemetry/api': ^1.4.1
       '@planetscale/database': '>=1'
+      '@tidbcloud/serverless': '*'
       '@types/better-sqlite3': '*'
       '@types/pg': '*'
       '@types/react': '>=18'
@@ -1764,6 +1765,8 @@ packages:
       '@opentelemetry/api':
         optional: true
       '@planetscale/database':
+        optional: true
+      '@tidbcloud/serverless':
         optional: true
       '@types/better-sqlite3':
         optional: true
@@ -5386,7 +5389,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.31.1(@neondatabase/serverless@0.7.2)(@planetscale/database@1.18.0)(@types/pg@8.6.6)(@types/react@18.3.3)(@vercel/postgres@0.8.0)(bun-types@1.1.12)(react@18.3.1):
+  drizzle-orm@0.31.2(@neondatabase/serverless@0.7.2)(@planetscale/database@1.18.0)(@types/pg@8.6.6)(@types/react@18.3.3)(@vercel/postgres@0.8.0)(bun-types@1.1.12)(react@18.3.1):
     optionalDependencies:
       '@neondatabase/serverless': 0.7.2
       '@planetscale/database': 1.18.0
