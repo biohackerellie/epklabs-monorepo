@@ -139,8 +139,8 @@ importers:
         specifier: ^8.57.0
         version: 8.57.0
       jiti:
-        specifier: ^1.21.3
-        version: 1.21.3
+        specifier: ^1.21.6
+        version: 1.21.6
       postcss:
         specifier: ^8.4.38
         version: 8.4.38
@@ -2514,8 +2514,8 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
 
-  jiti@1.21.3:
-    resolution: {integrity: sha512-uy2bNX5zQ+tESe+TiC7ilGRz8AtRGmnJH55NC5S0nSUjvvvM2hJHmefHErugGXN4pNv4Qx7vLsnNw9qJ9mtIsw==}
+  jiti@1.21.6:
+    resolution: {integrity: sha512-2yTgeWTWzMWkHu6Jp9NKgePDaYHbntiwvYuuJLbbN9vl7DC9DvXKOB2BC3ZZ92D3cvV/aflH0osDfwpHepQ53w==}
     hasBin: true
 
   js-beautify@1.15.1:
@@ -6445,7 +6445,7 @@ snapshots:
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
-  jiti@1.21.3: {}
+  jiti@1.21.6: {}
 
   js-beautify@1.15.1:
     dependencies:
@@ -7735,7 +7735,7 @@ snapshots:
       fast-glob: 3.3.2
       glob-parent: 6.0.2
       is-glob: 4.0.3
-      jiti: 1.21.3
+      jiti: 1.21.6
       lilconfig: 2.1.0
       micromatch: 4.0.5
       normalize-path: 3.0.0
