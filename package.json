@@ -23,7 +23,7 @@
   "devDependencies": {
     "@epklabs/prettier-config": "workspace:*",
     "@turbo/gen": "^1.13.4",
-    "prettier": "^3.3.1",
+    "prettier": "^3.3.2",
     "turbo": "^1.13.4",
     "typescript": "^5.4.5"
   },
