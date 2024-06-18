@@ -46,7 +46,7 @@
     "@epklabs/prettier-config": "workspace:*",
     "@epklabs/tsconfig": "workspace:*",
     "@types/mdx": "^2.0.13",
-    "@types/node": "^20.14.4",
+    "@types/node": "^20.14.5",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@types/react-vertical-timeline-component": "^3.3.6",
