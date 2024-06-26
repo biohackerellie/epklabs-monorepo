@@ -90,8 +90,8 @@ importers:
         specifier: ^3.6.0
         version: 3.6.0(react@18.3.1)
       resend:
-        specifier: ^3.3.0
-        version: 3.3.0
+        specifier: ^3.4.0
+        version: 3.4.0
       tailwind-merge:
         specifier: ^2.3.0
         version: 2.3.0
@@ -3301,8 +3301,8 @@ packages:
   remark-rehype@11.1.0:
     resolution: {integrity: sha512-z3tJrAs2kIs1AqIIy6pzHmAHlF1hWQ+OdY4/hv+Wxe35EhyLKcajL33iUEn3ScxtFox9nUvRufR/Zre8Q08H/g==}
 
-  resend@3.3.0:
-    resolution: {integrity: sha512-twDI+rORUQzJC546lEUKhsLKEuqWNFxthZ27kGiK+sR2Cq7CNsro/pgM0W7qT0OiXNLEFp0u3gkJ6kqocpWmYQ==}
+  resend@3.4.0:
+    resolution: {integrity: sha512-F3PVHdTHeLonSnrU5V6k8643LJ9QacLu3uI9M+BAFkmBmB1ELM2x7fdsziYZoSm6DmU6TKwiQCK0jf8dcNomcQ==}
     engines: {node: '>=18'}
 
   resolve-from@4.0.0:
@@ -7440,7 +7440,7 @@ snapshots:
       unified: 11.0.4
       vfile: 6.0.1
 
-  resend@3.3.0:
+  resend@3.4.0:
     dependencies:
       '@react-email/render': 0.0.15
 
