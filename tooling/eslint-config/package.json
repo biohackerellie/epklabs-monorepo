@@ -28,7 +28,7 @@
     "@epklabs/prettier-config": "workspace:*",
     "@epklabs/tsconfig": "workspace:*",
     "@types/eslint": "^8.56.10",
-    "eslint": "^8.57.0",
+    "eslint": "^9.7.0",
     "prettier": "^3.3.3",
     "typescript": "^5.5.3"
   },
